@@ -1,0 +1,56 @@
+#main {
+    border: 2px solid #1ac7c3;
+    display: block;
+    width: fit-content;
+    position: relative;
+}
+.image {
+    width: 16px;
+    margin: 0 5px;
+}
+.mainP,
+.date {
+    text-decoration-color: #0C4569;
+    text-decoration: underline;
+}
+.mainP {
+    margin-top: 4px;
+}
+.date {
+    animation: blinker 10s linear infinite;
+}
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+#preloader {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(255,255,255,0.7) url('../img/35.gif') 50% 50% no-repeat;
+    display: none;
+}
+.currency_name_div {
+    display: inline-block;
+    width: 40px;
+    margin-right: 10px;
+}
+.image_div,
+.currency_price {
+    display: inline-block;
+    width: 28px;
+}
+#forecast {
+    position: absolute;
+    bottom: 1px;
+    right: 1px;
+    width: 90px;
+    height: 140px;
+    background: #feea3f;
+}
+#forecast p {
+    margin: 5px 0;
+}
